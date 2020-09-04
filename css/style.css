@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Neucha&display=swap');
+
+:root {
+    font-family: 'Neucha', sans-serif;
+    --main-color: black;
+    --accent-color : white;
+    scroll-behavior: smooth;
+    --animate-duration: 800ms;
+    --animate-delay: 0.3s;
+}
+
+body {
+    max-width: 1080px;
+    margin: auto;
+}
+
+h1, h2, p, div {
+    margin : 0;
+    padding: 0;
+}
+
+#carouselExampleCaptions > div > div:nth-child(1) > img {
+    height: calc(82vh - 67px);
+    margin-bottom: 10px;
+    background-position: bottom;
+    background-size: cover;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+#carouselExampleCaptions > div > div.carousel-item.active > div > p {
+    color : var(--accent-color);
+    font-size: 1rem;
+    letter-spacing: 0.105rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+#carouselExampleCaptions > div > div:nth-child(2) > img {
+    height: calc(82vh - 67px);
+    margin-bottom: 10px;
+    background-position: bottom;
+    background-size: cover;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+#carouselExampleCaptions > div > div:nth-child(3) > img {
+    height: calc(82vh - 67px);
+    margin-bottom: 10px;
+    background-position: bottom;
+    background-size: cover;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+
+#carouselExampleCaptions > div > div.carousel-item.active > div > div > h5{
+    color : var(--accent-color);
+    font-family: 'Bangers', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+
+#carouselExampleCaptions > div > div.carousel-item.active > div > div > p {
+    color: var(--accent-color);
+    font-family: 'Neucha', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.110rem;
+    text-transform: uppercase;
+    text-decoration: transparent;
+    text-align: center;
+}
+
+.text-rotation {
+    margin-bottom: 270px;
+    display: grid;
+    justify-content: space-around;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 4s;
+}
+
+.animate__animated.animate__fadeInLeft {
+    --animate-duration: 2s;
+}
+/* header .banner h1 {
+    font-family: 'Bangers', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 0.25rem;
+} */
+
+/* div.banner > p {
+    color : var(--accent-color);
+    font-size: 1rem;
+    letter-spacing: 0.105rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+} */
+
+/*Навігаційна панель*/
+
+
+
+.nav-logo {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    margin-top: 2px; 
+}
+
+@media (min-width: 500px) {
+    .menu {
+    margin-left: 10%;
+    }
+}
+
+.menu {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    flex-wrap: wrap;
+    margin-top: 8px;
+	overflow: hidden;
+	border-radius: 0px;
+	counter-reset: flag; 
+}
+
+.menu a {
+    min-width: 100px;
+	text-decoration: none;
+	outline: none;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	float: left;
+    height: 44px;
+	font-size: 22px;
+	line-height: 44px;
+	color: white;
+	background: #666;
+	background: linear-gradient(#666, #333);
+	position: relative;
+    
+}
+
+.menu a:first-child {
+	border-radius: 0px;
+}
+
+.menu a.active, .menu a:hover{
+	background: #333;
+	background: linear-gradient(#333, #000);
+}
+
+.menu a.active:after, .menu a:hover:after {
+	background: #333;
+	background: linear-gradient(135deg, #333, #000);
+}
+
+.menu a:after {
+	position: absolute;
+	top: 0; 
+	right: -18px; 
+	width: 40px; 
+	height: 40px;
+	transform: scale(0.707) rotate(45deg);
+	z-index: 1;
+	background: #666;
+	background: linear-gradient(135deg, #666, #333);
+}
+
+.flat a, .flat a:after {
+	background: white;
+	color: black;
+	transition: all 0.6s;
+}
+
+/*Головний слайдер
+
+header .banner {
+    height: calc(100vh - 67px);
+    margin-bottom: 10px;
+    background-image: url(../img/lake.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+*/
+
+
+/* header .banner h1 {
+    color : var(--accent-color);
+} */
+
+.event {
+      height: 300px;
+      width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button_for_event {
+    background-color: skyblue;
+    text-align: center;
+    padding: 5px 10px;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+main {
+text-align: center;
+}
+
+#about {
+    text-align: center;
+    margin-top : 50px;
+    font-size: 20px;
+    height: 200px;  
+}
+
+
+@media (min-width: 500px) {
+    #rest {
+        margin-top: 180px;
+    }
+}
+
+.info {
+    margin-bottom: 80px; 
+    padding: 30px;
+    text-align: center;
+}
+
+#rest {
+	font-size: 20px;
+	height:200px;
+    margin-top: 320px;
+}
+
+.popular {
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+
+#wedding {
+    font-size: 20px;
+	height:200px;
+
+}	
+
+h2 {
+    color: white;
+    background-color: black; 
+}
+
+.celebrate_wedding {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (min-width : 320px) {
+.wedding-photo {
+    margin-top: 130px;
+    }
+}
+
+.wedding-photo {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 200px;
+    left: 0px;
+    z-index: 55;
+}
+
+.area_text {
+    float: left;
+    padding: 5px 5px;
+    width: 250px;
+    height: 30px;
+}
+
+::placeholder {
+  color: grey;
+  font-size: 1em;
+  font-style: oblique;
+}
+
+input[type=button], input[type=submit] {
+  background-color: skyblue;
+  border: none;
+  color: white;
+   border: 3px solid #666; 
+   border-radius: 10px;
+    padding: 10px; 
+    margin-left: 10px;   
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.icon-fb {
+    width: 50px;
+    height: 50px;
+}
+
+.our-contact {
+    color: green;
+
+}
+
+.copyright {
+    text-align: center;
+}
