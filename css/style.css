@@ -87,7 +87,7 @@ h1, h2, p, div {
 }
 
 .animate__animated.animate__fadeIn {
-  --animate-duration: 4s;
+  --animate-duration: 3.3s;
 }
 
 .animate__animated.animate__fadeInLeft {
