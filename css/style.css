@@ -82,6 +82,8 @@ h1, h2, p, div {
 
 /*parameters for animation text*/
 .text-rotation {
+    color: var(--accent-color);
+    font-family: 'Neucha', sans-serif;
     margin-bottom: 180px;
     display: grid;
     justify-content: space-around;
@@ -98,7 +100,11 @@ h1, h2, p, div {
 
 
 
-/*Навігаційна панель*/
+/*nav panel*/
+
+.b-button > a:hover {
+    border: 2px solid var(--main-color);
+}
 
 body > header > nav > a:nth-child(1) > img {
     position: relative;
@@ -108,8 +114,8 @@ body > header > nav > a:nth-child(1) > img {
 }
 
 .event {
-      height: 300px;
-      width: 300px;
+    height: 300px;
+    width: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
