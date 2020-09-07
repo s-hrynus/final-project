@@ -102,8 +102,10 @@ h1, h2, p, div {
 
 /*nav panel*/
 
-.b-button > a:hover {
-    border: 2px solid var(--main-color);
+
+body > header > nav {
+    background-color: red;
+    
 }
 
 body > header > nav > a:nth-child(1) > img {
