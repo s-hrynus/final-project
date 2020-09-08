@@ -9,6 +9,10 @@
     --animate-delay: 0.3s;
 }
 
+.row {
+    --animate-duration: 5.5s;
+}
+
 body {
     max-width: 1080px;
     margin: auto;
@@ -98,15 +102,8 @@ h1, h2, p, div {
 }
 
 
-
-
 /*nav panel*/
 
-
-body > header > nav {
-    background-color: red;
-    
-}
 
 body > header > nav > a:nth-child(1) > img {
     position: relative;
@@ -138,56 +135,69 @@ body > header > nav > a:nth-child(1) > img {
 }
 
 main {
-text-align: center;
+    text-align: center;
 }
 
-#about {
+.proposition {
     text-align: center;
     margin-top : 50px;
-    font-size: 20px;
-    height: 200px;  
+    font-size: 2rem;
+    height: 40px;
 }
 
 
-@media (min-width: 500px) {
-    #rest {
-        margin-top: 180px;
-    }
+#about {
+    font-family: 'Neucha', sans-serif;
+    font-size: 20px;
+    margin-bottom: 6%;
+}
+
+
+.card {
+    border: none;
 }
 
 .info {
-    margin-bottom: 80px; 
-    padding: 30px;
     text-align: center;
+    font-size: 1.4rem;
 }
 
 #rest {
-	font-size: 20px;
-	height:200px;
-    margin-top: 320px;
+    font-family: 'Neucha', sans-serif;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 500px) {
+    .rest {
+        display: block;
+        bottom: 10%;
+    }
 }
 
 .popular {
     text-align: center;
-    margin-top: 150px;
+    margin-top : 50px;
+    font-size: 2rem;
+    height: 40px;
 }
-
-
-
-#wedding {
-    font-size: 20px;
-	height:200px;
-
-}	
+	
 
 h2 {
     color: white;
     background-color: black; 
 }
 
-.celebrate_wedding {
+.offer {
+    font-family: 'Neucha', sans-serif;
+    height: 75px;  
+    margin-bottom: 5%;
+}
+
+.feedback {
+    font-family: 'Neucha', sans-serif;
+    margin-bottom: 80px; 
     text-align: center;
-    margin-top: 20px;
+    font-size: 1.4rem;
 }
 
 @media (min-width : 320px) {
@@ -197,12 +207,12 @@ h2 {
 }
 
 .wedding-photo {
+    margin-top : -3%;
     object-fit: cover;
     object-position: center;
     display: block;
     width: 100%;
     height: 100%;
-    top: 200px;
     left: 0px;
     z-index: 55;
 }
@@ -215,35 +225,81 @@ h2 {
 }
 
 ::placeholder {
-  color: grey;
-  font-size: 1em;
-  font-style: oblique;
+    color: grey;
+    font-size: 1rem;
+    font-style: oblique;
 }
 
 input[type=button], input[type=submit] {
-  background-color: skyblue;
-  border: none;
-  color: white;
-   border: 3px solid #666; 
-   border-radius: 10px;
+    background-color: skyblue;
+    border: none;
+    color: white;
+    border: 3px solid #666; 
+    border-radius: 10px;
     padding: 10px; 
     margin-left: 10px;   
 }
 
 .contact-info {
     text-align: center;
+    margin-bottom: 2%;
 }
 
-.icon-fb {
-    width: 50px;
-    height: 50px;
+.icon{
+    width: 55px;
+    height: 55px;
 }
 
 .our-contact {
-    color: green;
-
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.5%;
 }
 
 .copyright {
+    font-family: 'Neucha', sans-serif;
     text-align: center;
 }
+
+#map-container {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2%;
+}
+
+.countdown-title {
+    font-family: 'Neucha', sans-serif;
+    color: rgb(221, 28, 14);
+    font-weight: 100;
+    font-size: 35px;
+    margin: 40px 0px 20px;
+  }
+   
+.countdown {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+   
+.countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background: #ff3e31;
+    display: inline-block;
+  }
+   
+.countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: rgb(221, 28, 14);
+    display: inline-block;
+  }
+   
+.countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+  }

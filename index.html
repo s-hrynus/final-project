@@ -15,37 +15,37 @@
 	<meta property="og:title" content="База відпочинку Мостище; Відпочинок на природі біля Львова, Бібрки">
 	<link rel="shortcut icon" href="img/m-icon.png" type="image/m-icon">
 	<link rel="stylesheet" href="css/style.css">
-
+	<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="#">
 				<img src="img/m-logo.jpg"></a>
-					</div>
-					<a class="navbar-brand" href="#">Мостище</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item active">
-								<a class="nav-link"  href="#about">Про нас <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link"  href="#rest">Послуги</a>
-							</li>
-                            <li class="nav-item">
-								<a class="nav-link" href="#wedding">Весілля</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#contact">Контакти</a>
-							</li>
-						</ul>
-					</div>
+			</div>
+			<a class="navbar-brand" href="#">Мостище</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#about">Про нас <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#rest">Послуги</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#wedding">Весілля</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Контакти</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
-
 		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -92,11 +92,11 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
-
 	</header>
 	<main>
 		<section id="about">
-			<h2> Про нас </h2>
+			<h2 class="proposition"> Про нас </h2>
+			<br><br>
 			<h3>Звабливий відпочинок – у гірських "Мостищах"</h3>
 			<p class="info">Пригадайте, коли ви востаннє весело проводили час і відпочивали від усіх турбот?
 				На базі відпочинку "Мостище" - це все реально! Вас будуть для цього всі можливості так як база
@@ -107,57 +107,106 @@
 		<section id="rest">
 			<h2 class="popular"> Найпопулярніші варіанти комплексу </h2>
 			<br><br>
-			<div class="offer_one">
-				<img src="img/photo_offer_one.jpg" class="event" alt="Урочисті події">
-            </div>
-				<form>
-					<div class="button">
-						<p><button class="button_for_event">Урочисті події</button></p>
+			<div class="row">
+				<article class="card col-12 col-sm-6 col-md-3 col-lg-4  animate__animated animate__fadeInLeft">
+					<img src="img/event.png " class="card-img-top" alt="Celebrating event">
+					<div class="card-body">
+						<a href="#" class="btn btn-outline-dark"><b>Урочисті події</b></a>
 					</div>
-				</form>
+				</article>
+				<article class="card col-12 col-sm-6 col-md-3 col-lg-4 animate__animated animate__fadeInDown">
+					<img src="img/party.png" class="card-img-top" alt="Party">
+					<div class="card-body">
+						<a href="#" class="btn btn-outline-dark"><b>Корпоративи</b></a>
+					</div>
+				</article>
+				<article class="card col-12 col-sm-6 col-md-3 col-lg-4 animate__animated animate__fadeInRight">
+					<img src="img/wedding.png" class="card-img-top" alt="wedding">
+					<div class="card-body">
+						<a href="#" class="btn btn-outline-dark"><b>Весілля</b></a>
+					</div>
+				</article>
+				<article class="card col-12 col-sm-6 col-md-3 col-lg-4 animate__animated animate__fadeInLeft">
+					<img src="img/relax-zone.png" class="card-img-top" alt="Relax zone">
+					<div class="card-body">
+						<a href="#" class="btn btn-outline-dark"><b>Сауна</b></a>
+					</div>
+				</article>
+				<article class="card col-12 col-sm-6 col-md-3 col-lg-4 animate__animated animate__fadeInUp">
+					<img src="img/active-game.png" class="card-img-top" alt="Active game">
+					<div class="card-body">
+						<a href="#" class="btn btn-outline-dark"><b>Активний відпочинок</b></a>
+					</div>
+				</article>
+				<article class="card col-12 col-sm-6 col-md-3 col-lg-4 animate__animated animate__fadeInRight">
+					<img src="img/board-game.png" class="card-img-top" alt="Board game">
+					<div class="card-body">
+						<a href="#" class="btn btn-outline-dark"><b>Настільні ігри</b></a>
+					</div>
+				</article>
+			</div>
 		</section>
-		<br><br><br><br><br>
-		<br><br><br><br><br>
-		<br><br><br>
 		<section id="wedding">
-			<h2>Відсвяткуйте весілля у комлпексі "Мостища" і отримайте фантастні спогади на все життя</h2>
-			<p class="celebrate_wedding">Це буде незабутня весільна церемонія, яка подарує гостям і молодятам лише
-				приємні враження.
-				Ми надамо в оренду бенкетний зал, підберемо декор, запропонуємо різноманітні страви та напої в меню,
+			<h2 class="offer">Відсвяткуйте весілля у комлпексі Мостища і отримайте фантастні спогади на все життя</h2>
+			<p class="feedback">Це буде незабутня весільна церемонія, яка подарує гостям і молодятам лише
+				приємні враження. Ми надамо в оренду бенкетний зал, підберемо декор, запропонуємо різноманітні страви та
+				напої в меню,
 				а також цікаві розваги</p>
 		</section>
 		<div class="photo-collage">
 			<img src="img/wedding.jpg" class="wedding-photo" alt="Весільний колаж база відпочинку Мостище">
-        </div>
+		</div>
+		<h1 class="countdown-title">Знижки на раннє бронювання</h1>
+		<div id="countdown" class="countdown">
+			<div class="countdown-number">
+				<span class="days countdown-time"></span>
+				<span class="countdown-text">Днів</span>
+			</div>
+			<div class="countdown-number">
+				<span class="hours countdown-time"></span>
+				<span class="countdown-text">Годин</span>
+			</div>
+			<div class="countdown-number">
+				<span class="minutes countdown-time"></span>
+				<span class="countdown-text">Хвилин</span>
+			</div>
+			<div class="countdown-number">
+				<span class="seconds countdown-time"></span>
+				<span class="countdown-text">Секунд</span>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<div id="contact"> <br>
 			<h2 class="contact-info"> Контакти </h2>
-			<form>
-				<textarea class="area_text" placeholder="Задати питання">Поле для питання</textarea>
-				<input type="submit" value="Надіслати">
-			</form>
+			<div class="map-rotation"> <iframe id="map-container" frameborder="0" style="border:0"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.653959180255!2d24.30338861587536!3d49.67965665048219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a947446d2aff5%3A0xc14cf146277f1a33!2sRecreation%20%22Mostische%22!5e0!3m2!1sen!2sua!4v1599564136321!5m2!1sen!2sua"></iframe>
+				</iframe>
+			</div>
 		</div>
 		<div class="our-contact">
-			<p><b>komarbv@gmail.com</b></p>
-			<p><b>+38(067)-952-58-18</b></p>
-			<a href="http://www.mostyshche.lviv.ua">www.mostyshche.lviv.ua</a>
-			<br><br>
-			<a href="https://www.facebook.com/vidpochynokMostyshche"><img src="img/icon-fb.png" class="icon-fb" alt="Послання на фейсбук"></a>
+			<a href="https://www.facebook.com/vidpochynokMostyshche"><img src="img/fb-icon.png" class="icon"
+					alt="facebook link"></a>
+			<a href="#"><img src="img/insta-icon.png" class="icon" alt="facebook link"></a>
+			<a href="#"><img src="img/twiter-icon.png" class="icon" alt="facebook link"></a>
+			<a href="#"><img src="img/utube-icon.png" class="icon" alt="facebook link"></a>
+			<a href="#"><img src="img/linked-icon.png" class="icon" alt="facebook link"></a>
 		</div>
 		<br>
 		<p class="copyright">© 2020 База відпочинку Мостище. Всі права захищено.</p>
 	</footer>
-
-
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
+		</script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
 		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-	</script>
+		</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+		</script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
 	</script>
 	<script src="js/script.js"></script>
 </body>
